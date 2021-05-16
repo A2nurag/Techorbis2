@@ -50,10 +50,11 @@ function Navbar() {
                                 Leaderboard
                             </Link>
                         </li>
-
-                        <li>
-                            <Avatar className="navbar__profilePic" src={user.photo} onClick={() => auth.signOut()} />
-                        </li>
+                        {
+                            user && <li>
+                                <Avatar className="navbar__profilePic" src={user.photo} onClick={() => auth.signOut()} />
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

@@ -33,13 +33,12 @@ function App() {
                         db.collection('users').doc(user.uid).set({
                             level: 0
                         })
+
+                        db.collection('scores').doc(authUser.uid).set({
+                            score: 0,
+                            player: user.displayName
+                        })
                     }
-                })
-
-
-                db.collection('scores').doc(authUser.uid).set({
-                    score: 0,
-                    player: user.displayName
                 })
             }
             else {
@@ -64,7 +63,14 @@ function App() {
                     </>
                 ) :
                 (
-                    <Login />
+                    <Router>
+                        <Navbar />
+                        <Switch>
+                            <Route path="/" component={Login} exact></Route>
+                            <Route path="/rules" component={Rules} exact></Route>
+                            <Route path="/leaderboard" component={Leaderboard} exact></Route>
+                        </Switch>
+                    </Router>
                 )
             }
         </div>

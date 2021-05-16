@@ -16,9 +16,7 @@ function Leaderboard() {
         );
 
         {
-            allScores.map((player) => (
-                console.log(player.score)
-            ))
+            console.log(allScores)
         }
     }, [])
 
