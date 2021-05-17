@@ -1,138 +1,146 @@
 .Nav {
-    background: transparent;
-    width: 100vw;
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 10000;
+  background: transparent;
+  width: 100vw;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 1.5rem; */
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
 
 .NavContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .NavLogo {
-    padding: 0 2rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 0 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .NavLinks {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    letter-spacing: 0.2rem;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
 }
 
 .NavMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7px;
-    list-style: none;
-    margin: 0;
-    padding: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7px;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0;
 }
 
 .NavItems {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7rem;
-    padding: 0 30px;
-    border-bottom: 3px solid transparent;
-    overflow: hidden;
-    transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  padding: 0 1rem;
+  border-bottom: 3px solid transparent;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .NavItems:last-child {
-    border-bottom: 3px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
 .NavSignUp {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7rem;
-    overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  overflow: hidden;
 }
 
 .NavBtn {
-    background: var(--color-blue-light);
-    height: 60%;
-    width: 11rem;
-    outline: none;
-    border: none;
-    border-radius: 2rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--color-white);
-    transition: 0.3s;
+  background: var(--color-blue-light);
+  height: 60%;
+  width: 11rem;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  /* font-size: 1.8rem; */
+  font-weight: 600;
+  color: var(--color-white);
+  transition: 0.3s;
 }
 
 .menu-icon {
-    display: none;
+  display: none;
+}
+
+.NavItems--avatar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .navbar__profilePic {
-    margin: 0 20px 0 0;
+  /* margin: 0 20px 0 0; */
 }
 
 /* Responsive */
 
 @media screen and (max-width: 60em) {
-    .NavContainer {
-        position: relative;
-    }
-    .NavMenu {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        left: 0;
-        height: 100vh;
-        position: absolute;
-        top: -100vh;
-        opacity: 0;
-        transition: all 0.5s ease;
-        backdrop-filter: blur(50px);
-    }
-    .NavMenu.active {
-        backdrop-filter: blur(50px);
-        top: 0;
-        opacity: 1;
-        transition: all 0.5s ease-out;
-        z-index: 1;
-    }
-    .menu-icon {
-        display: block;
-        padding: 0 2rem;
-        transition: all 0.5s ease-out;
-        font-size: 1.2rem;
-        cursor: pointer;
-        overflow: hidden;
-        color: white;
-        z-index: 1000;
-    }
-    .menu-icon i {
-        font-size: 2rem;
-    }
-    .navbar__profilePic {
-        margin: 0;
-    }
+  .NavContainer {
+    position: relative;
+  }
+  .NavMenu {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    opacity: 0;
+    transition: all 0.5s ease;
+    backdrop-filter: blur(50px);
+  }
+  .NavMenu.active {
+    backdrop-filter: blur(50px);
+    top: 0;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    z-index: 1;
+  }
+  .menu-icon {
+    display: block;
+    padding: 0 2rem;
+    transition: all 0.5s ease-out;
+    font-size: 1.2rem;
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+    z-index: 1000;
+  }
+  .menu-icon i {
+    font-size: 2rem;
+  }
+  .navbar__profilePic {
+    margin: 0;
+  }
 }
