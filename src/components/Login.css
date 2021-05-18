@@ -19,15 +19,11 @@
     opacity: 1;
   }
 }
-
 .login {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: #41295a;
-  background: -webkit-linear-gradient(to right, #2f0743, #41295a);
-  background: linear-gradient(to right, #2f0743, #41295a);
   height: 100vh;
 }
 
@@ -47,7 +43,7 @@
   margin-bottom: 20px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #ffffffd9;
+  color: #ffffff;
   opacity: 0;
   animation: login-animation 400ms ease-in 300ms forwards;
 }
@@ -55,9 +51,10 @@
 .login__header > h3 {
   font-size: clamp(2rem, 2vw, 3rem);
   margin-bottom: 0;
-  color: #ffffff5d;
+  color: #ffffffb4;
   opacity: 0;
   animation: login-animation 400ms ease-in forwards;
+  /* backdrop-filter: blur(10px); */
 }
 
 .login__header > p {
