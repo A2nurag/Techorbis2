@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap");
 
 .App {
-  /* text-align: center; */
-  background: #41295a;
-  background: -webkit-linear-gradient(to right, #2f0743, #41295a);
-  background: linear-gradient(to right, #2f0743, #41295a);
+  background: url(assets/background.jpg) no-repeat;
+  background-size: cover;
   color: white;
   list-style: none;
   overflow: hidden;
