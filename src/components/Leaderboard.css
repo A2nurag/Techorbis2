@@ -1,23 +1,23 @@
 .leaderboard {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: large;
-    align-items: start;
-    width: 100%;
-    padding-top: clamp(20px, 10vw, 100px);
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: large;
+  align-items: start;
+  width: 100%;
+  padding-top: clamp(20px, 10vw, 100px);
+  min-height: 100vh;
 }
 
 .player-card {
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto;
-    border-bottom: 1px solid white;
-    padding: 20px;
-    margin-bottom: 10px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+  padding: 20px;
+  margin-bottom: 10px;
 }
