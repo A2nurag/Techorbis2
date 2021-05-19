@@ -1,111 +1,109 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 .questions {
-  min-height: 100vh;
-  width: 100vw;
-  backdrop-filter: blur(10px);
-  background-color: #00000031;
-  /* text-align: center; */
+    min-height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    background-color: #00000031;
+    /* text-align: center; */
 }
 
 .questions__container {
-  margin: auto;
-  max-width: 900px;
-  width: 90vw;
-  padding-bottom: 100px;
-  /* display: flex; */
-  /* flex-direction: column; */
-
-  /* justify-content: flex-start; */
-  /* align-items: center; */
-  /* padding-bottom: 20px; */
-  /* padding: 0 clamp(10px, 5%, 6rem); */
+    margin: auto;
+    max-width: 900px;
+    width: 90vw;
+    padding-bottom: 100px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* padding-bottom: 20px; */
+    /* padding: 0 clamp(10px, 5%, 6rem); */
 }
 
 .questions--heading {
-  font-size: clamp(1rem, 5vw, 2rem);
-  color: #d6ecff9c;
-  margin: 1rem 0;
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: #d6ecff9c;
+    margin: 1rem 0;
 }
 
 .questions--coord {
-  display: inline-block;
-  position: relative;
-  padding: 1.5rem;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  background-color: #0000000c;
-  max-width: 800px;
-  border-radius: 10px;
-  color: #ffffffde;
-  /* z-index: 2; */
+    display: inline-block;
+    position: relative;
+    padding: 1.5rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    background-color: #0000000c;
+    max-width: 800px;
+    border-radius: 10px;
+    color: #ffffffde;
+    /* z-index: 2; */
 }
 
 .questions--hints {
-  padding: 1rem;
-  font-weight: 400;
-  display: inline-block;
-  line-height: 150%;
-  color: #ffffffe1;
-  max-width: 700px;
-  margin-bottom: 2rem;
-  background-color: #00000017;
-  border-radius: 10px;
+    padding: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 150%;
+    color: #ffffffe1;
+    max-width: 700px;
+    margin-bottom: 2rem;
+    background-color: #00000017;
+    border-radius: 10px;
 }
 
 .questions__first .questions--hints {
-  background-color: transparent;
-  /* font-size: 1.1rem; */
-  font-weight: 600;
-  color: #ffffffde;
+    background-color: transparent;
+    /* font-size: 1.1rem; */
+    font-weight: 600;
+    color: #ffffffde;
 }
 
 .questions--btn {
-  border: none;
-  outline: none;
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 1.75rem 5rem;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  margin-top: 20px;
-  background-color: #ffffff46;
-  cursor: pointer;
-  transition: background-color 50ms;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1.75rem 5rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #ffffff46;
+    cursor: pointer;
+    transition: background-color 50ms;
 }
 
-.questions--btn:hover,
-.questions--btn:focus {
-  background-color: #ffffff6e;
+.questions--btn:hover, .questions--btn:focus {
+    background-color: #ffffff6e;
 }
 
 .questions--input {
-  font-family: inherit;
-  width: 100%;
-  max-width: 700px;
-  background: none;
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #ffffff46;
-  color: white;
-  height: 3rem;
-  font-size: 1.2rem;
-  /* border-radius: 10px; */
-  margin: 30px 0;
-  /* padding: 0 10px; */
+    font-family: inherit;
+    width: 100%;
+    max-width: 700px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ffffff46;
+    color: white;
+    height: 3rem;
+    font-size: 1.2rem;
+    /* border-radius: 10px; */
+    margin: 30px 0;
+    /* padding: 0 10px; */
 }
 
-.questions--input:hover,
-.questions--input:focus {
-  border-bottom: 2px solid #ffffff6e;
+.questions--input:hover, .questions--input:focus {
+    border-bottom: 2px solid #ffffff6e;
 }
+
 .questions--input::placeholder {
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff5d;
-  font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff5d;
+    font-weight: 600;
 }

@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Rules from './components/Rules';
 import Leaderboard from './components/Leaderboard';
+import Home from './components/Home';
 
 function App() {
     const user = useSelector(selectUser);
@@ -55,7 +56,8 @@ function App() {
                         <Router>
                             <Navbar />
                             <Switch>
-                                <Route path="/" component={Questions} exact></Route>
+                                <Route path="/" component={Home} exact></Route>
+                                <Route path="/questions" component={Questions} exact></Route>
                                 <Route path="/rules" component={Rules} exact></Route>
                                 <Route path="/leaderboard" component={Leaderboard} exact></Route>
                             </Switch>

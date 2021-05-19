@@ -1,0 +1,91 @@
+.cCont {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: clamp(30px, 30vw, 300px);
+    align-items: center;
+}
+
+.cCont .startsHead {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.clock {
+    position: relative;
+    width: 900px;
+    height: 250px;
+    z-index: 10;
+    border-radius: 20px;
+    bottom: 5%;
+}
+
+.clock .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.clock .container h2 {
+    font-size: 6em;
+    color: #fff;
+}
+
+.legend {
+    font-size: 20px;
+}
+
+.day, .hour, .min, .sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock p {
+    font-weight: bold;
+}
+
+.clock .container h2:nth-child(odd) {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 960px) {
+    .clock {
+        position: relative;
+        width: 90%;
+        height: 120px;
+        z-index: 10;
+        border-radius: 10px;
+        bottom: 5%;
+    }
+    .clock .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .clock .container h2 {
+        font-size: 2em;
+        color: #fff;
+    }
+    .legend {
+        font-size: 13px;
+    }
+    .clock .container h2:nth-child(odd) {
+        padding: 3px 12px;
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        margin: 0 7px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}

@@ -4,22 +4,22 @@ import "./Login.css";
 import { auth, provider } from "../firebase";
 
 function Login() {
-  const signIn = () => {
-    auth.signInWithPopup(provider);
-  };
+    const signIn = () => {
+        auth.signInWithPopup(provider);
+    };
 
-  return (
-    <div className="login">
-      <div className="login__header">
-        <h3>Welcome to</h3>
-        <h1>Techorbis 2.0</h1>
-      </div>
+    return (
+        <div className="login">
+            <div className="login__header">
+                <h3>Welcome to</h3>
+                <h1>Techorbis 2.0</h1>
+            </div>
 
-      <div className="login__button">
-        <Button onClick={signIn}>Sign IN</Button>
-      </div>
-    </div>
-  );
+            <div className="login__button">
+                <Button onClick={signIn}>Sign IN</Button>
+            </div>
+        </div>
+    );
 }
 
 export default Login;
