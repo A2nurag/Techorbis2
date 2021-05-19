@@ -25,19 +25,18 @@ function App() {
                     displayName: authUser.displayName,
                 }))
 
-                var levRef = db.collection('users').doc(authUser.uid)
-                levRef.get().then((doc) => {
-                    if (doc.exists) {
-
-                    }
-                    else {
-                        db.collection('users').doc(user.uid).set({
+                var levRef = db.collection('users')
+                levRef.doc(authUser.uid).get().then((doc) => {
+                    if (!doc.exists) {
+                        console.log("Does not exist")
+                        db.collection('users').doc(authUser.uid).set({
+                            name: authUser.displayName,
                             level: 0
                         })
 
                         db.collection('scores').doc(authUser.uid).set({
                             score: 0,
-                            player: user.displayName
+                            player: authUser.displayName
                         })
                     }
                 })
