@@ -1,23 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
 .leaderboard {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  font-size: large;
-  align-items: start;
-  width: 100%;
-  padding-top: clamp(20px, 10vw, 100px);
-  min-height: 100vh;
+  min-height: calc(100vh - 4rem);
+  backdrop-filter: blur(10px);
+}
+
+.leaderboard__container {
+  margin: auto;
+  max-width: 900px;
+  width: 90vw;
+  padding-bottom: 100px;
+}
+
+.leaderboard__heading {
+  font-size: clamp(2rem, 10vw, 4rem);
+  color: #d6ecff9c;
+  margin-bottom: 1rem;
 }
 
 .player-card {
-  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
   width: 90%;
   margin: 0 auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+  color: #ffffffe1;
+  border-bottom: 1px solid #ffffff6e;
   padding: 20px;
   margin-bottom: 10px;
 }

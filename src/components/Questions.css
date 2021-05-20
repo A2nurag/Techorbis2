@@ -29,7 +29,7 @@
 .questions--heading {
   font-size: clamp(1rem, 5vw, 2rem);
   color: #d6ecff9c;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .questions--coord {
