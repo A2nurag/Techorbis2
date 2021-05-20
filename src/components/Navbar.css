@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .Nav {
   background: transparent;
   width: 100vw;
@@ -5,10 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-size: 1.5rem; */
-  position: sticky;
-  top: 0;
-  z-index: 10000;
+  padding: 0 1rem;
   color: #ffffffde;
 }
 
@@ -101,10 +104,6 @@
   gap: 10px;
 }
 
-.navbar__profilePic {
-  /* margin: 0 20px 0 0; */
-}
-
 /* Responsive */
 
 @media screen and (max-width: 60em) {
@@ -133,13 +132,15 @@
   }
   .menu-icon {
     display: block;
-    padding: 0 2rem;
+    padding: 1rem;
+    padding-right: 0;
     transition: all 0.5s ease-out;
     font-size: 1.2rem;
     cursor: pointer;
     overflow: hidden;
     /* color: white; */
     z-index: 1000;
+    stroke-width: 2px;
   }
   .menu-icon i {
     font-size: 2rem;
