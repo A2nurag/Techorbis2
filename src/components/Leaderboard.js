@@ -27,7 +27,9 @@ function Leaderboard() {
         {allScores.map((player) => (
           // <SidebarChannel key={id} id={id} channelName={channel.channelName} />
           <div key={player.id} className="player-card">
-            <h3>{player.player}</h3>
+            <div>
+              <h3 className="player">{player.player}</h3>
+            </div>
             <h3>{player.score}</h3>
           </div>
         ))}

@@ -26,8 +26,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
-  width: 90%;
   margin: 0 auto;
   color: #ffffffe1;
   border-bottom: 1px solid #ffffff6e;

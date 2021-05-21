@@ -3,11 +3,9 @@ import "./Intro.css";
 import { Button } from "@material-ui/core";
 import mntclogo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import Countdown from "./Countdown";
 
 function Intro() {
-  const countdownDate = new Date("May 25, 2020 18:00:00 GMT+0530").getTime();
-  const now = new Date().getTime();
-  const distance = countdownDate - now;
   return (
     <div className="intro">
       <div className="intro__header">
@@ -16,11 +14,9 @@ function Intro() {
       </div>
 
       <div className="intro__button">
-        {now > countdownDate && (
-          <Link to="/questions">
-            <Button>Go to Questions</Button>
-          </Link>
-        )}
+        <Link to="/questions">
+          <Button>Go to Questions</Button>
+        </Link>
         or
         <Link to="/rules" className="rules-link">
           Check the Rules
